@@ -37,14 +37,16 @@
 // promise2.catch(onError)
 
 try {
- function thing() {
-  let string = "thing"
-  console.log(string)
- }
+  function thing() {
+    let string = "thing";
+    return string;
+  }
 
-  let thing = thing()
-  console.log(thing)
-  throw(er)
-} catch(er) {
-  console.error(er)
+  let thing = thing();
+
+  console.log(thing);
+
+  throw er;
+} catch (er) {
+  alert(er);
 }

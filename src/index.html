@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 
 <html>
 
@@ -7,50 +7,78 @@
     <title>HTML & CSS</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="/index-styles.css">
-    <script type="module" src="/index.js"></script>
+    <script type="module" src="index.js"></script>
     
   </head>
 
   <body>
     
-    <a onclick="whenClick(this.href); return false;" href="/clock-sinc-timer/index.html">clock-sinc-timer</a>
-    <br>
-    <br>
-    <a onclick="whenClick(this.href); return false;" href="/clock/index.html">clock</a>
-    <br>
-    <br>
-    <a onclick="whenClick(this.href); return false;" href="/cool-window/index.html">cool-window</a>
-    <br>
-    <br>
-    <a onclick="whenClick(this.href); return false;" href="/countdown-clock/index.html">countdown-clock</a>
-    <br>
-    <br>
-    <a onclick="whenClick(this.href); return false;" href="/countdown-clock/countdown-clock-old.html">countdown-clock-old</a>
-    <br>
-    <br>
-    <a onclick="whenClick(this.href); return false;" href="/cute-puppy-program/index.html">cute-puppy-program</a>
-    <br>
-    <br>
-    <a onclick="whenClick(this.href); return false;" href="/eliana/animal-information/index.html">animal-information</a>
-    <br>
-    <br>
-    <a onclick="whenClick(this.href); return false;" href="/eliana/ellie-program/index.html">ellie-program</a>
-    <br>
-    <br>
-    <a onclick="whenClick(this.href); return false;" href="/fighter-jet-comparison/index.html">fighter-jet-comparison</a>
-    <br>
-    <br>
-    <a onclick="whenClick(this.href); return false;" href="/guess-the-number/index.html">guess-the-number</a>
-    <br>
-    <br>
-    <a onclick="whenClick(this.href); return false;" href="/intergalactica/index.html">intergalactica</a>
-    <br>
-    <br>
-    <a onclick="whenClick(this.href); return false;" href="/pink-bunny/index.html">pink-bunny</a>
-    <br>
-    <br>
-    <a onclick="whenClick(this.href); return false;" href="/practice/index.html">practice</a>
+    <div id="main">
+      
+      <h1>
+        Joshua's Programmes
+      </h1>
+      
+      <ul>
+        <li>
+          <a onclick="whenClick(this.href); return false;" href="/clock-sinc-timer/index.html">clock-sinc-timer</a>
+        </li>
+        <li>
+          <a onclick="whenClick(this.href); return false;" href="/clock/index.html">clock</a>
+        </li>
+        <li>
+          <a onclick="whenClick(this.href); return false;" href="/cool-window/index.html">cool-window</a>
+        </li>
+        <li>
+          <a onclick="whenClick(this.href); return false;" href="/countdown-clock/index.html">countdown-clock</a>
+        </li>
+        <li>
+          <a onclick="whenClick(this.href); return false;" href="/countdown-clock/countdown-clock-old.html">countdown-clock-old</a>
+        </li>
+        <li>
+          <a onclick="whenClick(this.href); return false;" href="/cute-puppy-program/index.html">cute-puppy-program</a>
+        </li>
+        <li>
+          <a onclick="whenClick(this.href); return false;" href="/eliana/animal-information/index.html">animal-information</a>
+        </li>
+        <li>
+          <a onclick="whenClick(this.href); return false;" href="/eliana/ellie-program/index.html">ellie-program</a>
+        </li>
+        <li>
+          <a onclick="whenClick(this.href); return false;" href="/fighter-jet-comparison/index.html">fighter-jet-comparison</a>
+        </li>
+        <li>
+          <a onclick="whenClick(this.href); return false;" href="/guess-the-number/index.html">guess-the-number</a>
+        </li>
+        <li>
+          <a onclick="whenClick(this.href); return false;" href="/intergalactica/index.html">intergalactica</a>
+        </li>
+        <li>
+          <a onclick="whenClick(this.href); return false;" href="javascript-practice/index.html">javascript-practice</a>
+        </li>
+        <li>
+          <a onclick="whenClick(this.href); return false;" href="/pink-bunny/index.html">pink-bunny</a>
+        </li>
+        <li>
+          <a onclick="whenClick(this.href); return false;" href="/practice/index.html">practice</a>
+        </li>
+      </ul>
+      
+      <input type="hidden" id="hidden-value">
+      
+    </div>
     
+    <div id="password-container" class="hidden">
+      
+      <label for="password">Enter password:</label>
+      <br>
+      <input type="password" id="password" placeholder="Password" size="30">
+      <button onclick="checkPassword(document.getElementById(`hidden-value`).value);">Submit</button>
+      <br>
+      <div id="incorrect"></div>
+      
+    </div>
+      
   </body>
 
 </html>

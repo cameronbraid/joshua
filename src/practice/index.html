@@ -10,6 +10,8 @@
     
     <link rel="stylesheet" type="text/css" href="practice.css" />
     
+    <script type="module" src="practice.js">
+    
     <meta name="description" content="View a fun web page created by a 12 year old learning HTML and CSS. Features lots of content on the F-22 Raptor.">
     
   </head>
@@ -248,7 +250,7 @@
     
     <div id="assessment-container">
     
-      <form id="assessment">
+      <form id="assessment" onsubmit="submit()">
         
         <div id="assessment-label">
           Personal assessment
@@ -264,7 +266,7 @@
           First name:
           <br>
           <div class="margin-top">
-            <input type="text" name="last-name" size="25" maxlength="40">
+            <input type="text" id="first-name" name="first-name" size="25" maxlength="40">
           </div>
             
           <br>
@@ -272,7 +274,7 @@
           Last name:
           <br>
           <div class="margin-top">
-            <input type="text" name="first-name" size="25" maxlength="40">
+            <input type="text" id="last-name" name="last-name" size="25" maxlength="40">
           </div>
           
           <br>
@@ -280,7 +282,7 @@
           Email (or parent's):
           <br>
           <div class="margin-top">
-            <input type="email" name="email" size="25" maxlength="40">
+            <input type="email" id="email" name="email" size="25" maxlength="40">
           </div>
           
         </fieldset>

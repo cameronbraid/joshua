@@ -85,4 +85,3 @@ window.test = test;
 window.stopAlarm = stopAlarm;
 window.countdown = countdown;
 window.resetDefault = resetDefault;
-window.passwordCheck = passwordCheck;

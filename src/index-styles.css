@@ -1,5 +1,6 @@
 a {
   color: blue;
+  font-size: 1.2em;
 }
 a:hover {
   color: #f57c20;
@@ -15,7 +16,28 @@ button {
   border: 2px solid black;
   border-radius: 0.6em;
 }
-div {
+div#incorrect {
   margin-top: 1em;
   color: #fa1313;
+}
+.hidden {
+  display: none;
+}
+div#main {
+  width: 20%;
+  padding: 1em;
+  background-color: lime;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin: 0 auto 0 auto;
+}
+ul {
+  margin-left: 2em;
+}
+li {
+  margin-bottom: 0.8em;
+}
+h1 {
+  color: darkorange;
+  text-align: center;
 }

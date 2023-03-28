@@ -1,0 +1,34 @@
+<button onclick="whenClick()">Click me</button>
+
+<script>
+  
+  function whenClick() {
+    
+    try {
+      
+      function onSuccess(message) {
+        console.log(message)
+      }
+      
+      function onError(e) {
+        console.error(e)
+      }
+      
+      function createPromise() {
+        let promise = new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve('The promise was resolved!')
+          }, 2000)
+        })
+        promise.then(onSuccess).catch(onError)
+      }
+      
+      createPromise();
+      
+    } catch(err) {
+      console.error(err)
+    }
+    
+  }
+  
+</script>

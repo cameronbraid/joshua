@@ -1,0 +1,30 @@
+list of css colors at https://www.crockford.com/colors.html
+
+
+hex color picker at https://www.webfx.com/web-design/color-picker/
+
+
+a nice red color (for incorrect answers) is #fa1313
+
+
+a nice orange color (for links) is #f57c20
+
+
+JavaScript array methods: https://ui.dev/c/advanced-javascript/javascript-array-methods-you-should-know
+
+
+main JavaScript array methods:
+
+    .map: creates new array with the result of calling provided function on every element in the array
+    
+    .filter: creates new array after filtering out elements that do not match the test provided by a function
+    
+    .every: used to determine if all elements pass the test provided by a function; if so, returns true, if not, returns false
+    
+    .includes: used if a particular value is found in an array; if so, returns true, if not, returns false
+    
+    .join: turns all elements of an array into a string and returns it separated with commas unless otherwise specified in parentheses
+    
+    .reverse: reverses the order of an array
+    
+    .some: used to determine if any element in the array passes the test provided by a function; if so, returns true, if not, returns false

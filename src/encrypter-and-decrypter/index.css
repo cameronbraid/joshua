@@ -1,0 +1,30 @@
+textarea {
+  font-size: 0.75em;
+  padding: 0.5em;
+  width: 20em;
+  height: 8em;
+  border-radius: 10px;
+  margin-bottom: 0.75em;
+}
+fieldset {
+  padding: 1.5em;
+  border: 3px solid darkgray;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 4em;
+}
+body {
+  background-color: blue;
+  text-align: center;
+  margin-top: 1.5em;
+}
+button {
+  font-size: 1em;
+  background-color: greenyellow;
+  border: none;
+  border-radius: 5px;
+  border: 2.5px solid white;
+}
+legend {
+  color: white;
+}

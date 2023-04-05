@@ -2,13 +2,13 @@
   "name": "vanilla",
   "version": "1.0.0",
   "description": "JavaScript example starter project",
-  "main": "index.html",
   "scripts": {
     "start": "parcel src/index.html src/**/*.html",
     "build": "parcel build src/**/*.html src/index.html"
   },
   "dependencies": {
     "date-fns": "^2.29.3",
+    "parcel": "^2.8.3",
     "parcel-bundler": "^1.6.1"
   },
   "devDependencies": {

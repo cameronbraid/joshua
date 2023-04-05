@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+
+<html>
+    
+    <head>
+        
+        <meta charset="utf-8">
+        <title>Encrypter and Decrypter</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script type="module" src="index.js"></script>
+        
+    </head>
+    
+    <body>
+        
+        <div id="container">
+            
+            <fieldset>
+                
+                <legend>
+                    Encrypter
+                </legend>
+                
+                <textarea
+                    id="encrypt-text"
+                    onFocus="this.style.backgroundColor = 'yellow';"
+                    onBlur="this.style.backgroundColor = 'white';"
+                    placeholder="Enter the text to encrypt"></textarea>
+                
+                <br>
+                
+                <textarea
+                    id="encrypted-text"
+                    onFocus="this.style.backgroundColor = 'yellow';"
+                    onBlur="this.style.backgroundColor = 'white';"
+                    placeholder="Encrypted text will display here"></textarea>
+                
+                <br>
+                    
+                <button onclick="encryptDom()">Submit</button>
+                
+            </fieldset>
+            
+            <br>
+            
+            <fieldset>
+                
+                <legend>
+                    Decrypter
+                </legend>
+                
+                <textarea
+                    id="decrypt-text"
+                    onFocus="this.style.backgroundColor = 'yellow';"
+                    onBlur="this.style.backgroundColor = 'white';"
+                    placeholder="Enter the text to decrypt"></textarea>
+                
+                <br>
+                
+                <textarea
+                    id="decrypted-text"
+                    onFocus="this.style.backgroundColor = 'yellow';"
+                    onBlur="this.style.backgroundColor = 'white';"
+                    placeholder="Decrypted text will display here"></textarea>
+                
+                <br>
+                    
+                <button onclick="decryptDom()">Submit</button>
+            
+            </fieldset>
+        
+        </div>
+        
+    </body>
+    
+</html>

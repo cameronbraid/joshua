@@ -6,7 +6,7 @@
     
     <title>HTML & CSS</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="/index-styles.css">
+    <link rel="stylesheet" type="text/css" href="/src/index-styles.css">
     <script type="module" src="index.js"></script>
     
   </head>
@@ -21,61 +21,65 @@
       
       <ul>
         <li>
-          <a onclick="whenClick(this.href); return false;" href="/clock-sinc-timer/index.html">clock-sinc-timer</a>
+          <a onclick="whenClick(this.href); return false;" href="/src/clock-sinc-timer/index.html">clock-sinc-timer</a>
         </li>
         <li>
-          <a onclick="whenClick(this.href); return false;" href="/clock/index.html">clock</a>
+          <a onclick="whenClick(this.href); return false;" href="/src/clock/index.html">clock</a>
         </li>
         <li>
-          <a onclick="whenClick(this.href); return false;" href="/cool-window/index.html">cool-window</a>
+          <a onclick="whenClick(this.href); return false;" href="/src/cool-window/index.html">cool-window</a>
         </li>
         <li>
-          <a onclick="whenClick(this.href); return false;" href="/countdown-clock/index.html">countdown-clock</a>
+          <a onclick="whenClick(this.href); return false;" href="/src/countdown-clock/index.html">countdown-clock</a>
         </li>
         <li>
-          <a onclick="whenClick(this.href); return false;" href="/countdown-clock/countdown-clock-old.html">countdown-clock-old</a>
+          <a onclick="whenClick(this.href); return false;" href="/src/countdown-clock/countdown-clock-old.html">countdown-clock-old</a>
         </li>
         <li>
-          <a onclick="whenClick(this.href); return false;" href="/cute-puppy-program/index.html">cute-puppy-program</a>
+          <a onclick="whenClick(this.href); return false;" href="/src/cute-puppy-program/index.html">cute-puppy-program</a>
         </li>
         <li>
-          <a onclick="whenClick(this.href); return false;" href="/eliana/animal-information/index.html">animal-information</a>
+          <a onclick="whenClick(this.href, 'hopper1!'); return false;" href="/src/eliana/animal-information/index.html">animal-information</a>
         </li>
         <li>
-          <a onclick="whenClick(this.href); return false;" href="/eliana/ellie-program/index.html">ellie-program</a>
+          <a onclick="whenClick(this.href, 'hopper1!'); return false;" href="/src/eliana/ellie-program/index.html">ellie-program</a>
         </li>
         <li>
-          <a onclick="whenClick(this.href); return false;" href="/fighter-jet-comparison/index.html">fighter-jet-comparison</a>
+          <a onclick="whenClick(this.href, 'secret1!'); return false;" href="/src/encrypter-and-decrypter/index.html">encrypter-and-decrypter</a>
         </li>
         <li>
-          <a onclick="whenClick(this.href); return false;" href="/guess-the-number/index.html">guess-the-number</a>
+          <a onclick="whenClick(this.href); return false;" href="/src/fighter-jet-comparison/index.html">fighter-jet-comparison</a>
         </li>
         <li>
-          <a onclick="whenClick(this.href); return false;" href="/intergalactica/index.html">intergalactica</a>
+          <a onclick="whenClick(this.href); return false;" href="/src/guess-the-number/index.html">guess-the-number</a>
         </li>
         <li>
-          <a onclick="whenClick(this.href); return false;" href="javascript-practice/index.html">javascript-practice</a>
+          <a onclick="whenClick(this.href); return false;" href="/src/intergalactica/index.html">intergalactica</a>
         </li>
         <li>
-          <a onclick="whenClick(this.href); return false;" href="/pink-bunny/index.html">pink-bunny</a>
+          <a onclick="whenClick(this.href); return false;" href="/src/javascript-practice/index.html">javascript-practice</a>
         </li>
         <li>
-          <a onclick="whenClick(this.href); return false;" href="/practice/index.html">practice</a>
+          <a onclick="whenClick(this.href); return false;" href="/src/pink-bunny/index.html">pink-bunny</a>
+        </li>
+        <li>
+          <a onclick="whenClick(this.href); return false;" href="/src/practice/index.html">practice</a>
         </li>
       </ul>
       
-      <input type="hidden" id="hidden-value">
+      <input type="hidden" id="hidden-href">
+      <input type="hidden" id="hidden-password">
       
     </div>
     
-    <div id="password-container" class="hidden">
+    <div id="password-container" class="hidden" style="text-align: center; margin-top: 2em">
       
-      <label for="password">Enter password:</label>
+      <label for="password" style="margin-right: 5.7em">Enter password:</label>
       <br>
-      <input type="password" id="password" placeholder="Password" size="30">
-      <button onclick="checkPassword(document.getElementById(`hidden-value`).value);">Submit</button>
+      <input type="password" id="password" placeholder="Password" size="15">
+      <button onclick="checkPassword(document.getElementById(`hidden-href`).value, document.getElementById(`hidden-password`));">Submit</button>
       <br>
-      <div id="incorrect"></div>
+      <div id="incorrect" style="margin-left: 2.4em"></div>
       
     </div>
       

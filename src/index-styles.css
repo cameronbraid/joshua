@@ -29,10 +29,10 @@ div#main {
   background-color: lime;
   border: 3px solid black;
   border-radius: 10px;
-  margin: 0 auto 0 auto;
+  margin: 2em auto 0 auto;
 }
 ul {
-  margin-left: 2em;
+  margin-left: 1.5em;
 }
 li {
   margin-bottom: 0.8em;
